@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#wrap{
+    width: 20%;
+    text-align: center;
+    background-color: black;
+}
+#wrap h1 a{
+    color: white;
+    display: block;
+    line-height: 50px;
+    font-family: 'Black Han Sans', sans-serif;
+}
+#wrap nav .depth01 > li{
+    position: relative;
+}
+#wrap nav .depth01 > li > a{
+    color: white;
+    display: block;
+    line-height: 50px;   
+    border-top: solid 1px white;
+}
+#wrap nav .depth02{
+    left: 100%;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+#wrap nav .depth02 li a{
+    display: block;
+    color: black;
+    line-height: 50px;
+    background-color:aqua;
+    border-top: solid 1px black;
+}
+#wrap nav .depth01 > li:hover .depth02{
+    display: block;
+}
