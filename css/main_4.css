@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#wrap{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    background-color: black;
+}
+#wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#wrap h1{
+    width: 20%;
+    float: left;
+}
+#wrap h1 a{
+    color: white;
+    line-height: 50px;
+    display: block;
+}
+#wrap nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#wrap nav .depth01{
+    float: right;
+    width: 60%;
+}
+#wrap nav .depth02::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#wrap nav .depth01 > li{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+#wrap nav .depth01 > li > a{
+    color: white;
+    line-height: 50px;
+    display: block;
+}
+#wrap nav .depth02{
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+#wrap nav .depth02 li a{
+    color: white;
+    background-color: black;
+    line-height: 50px;
+    display: block;
+}
+#wrap nav .depth01:hover .depth02{
+    height: 404px;
+}
+#wrap nav .depth01 > li:hover > a{
+    background-color: white;
+    color: black;
+}
+#wrap nav .depth02 li:hover a{
+    background-color: white;
+    color: black;
+}
