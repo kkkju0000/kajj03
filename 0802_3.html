@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul, ol, dl{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    #box{
+        margin: 400px;
+        width: 500px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    #box input{
+        display: none;
+    }
+    #box label{
+        background-color: black;
+        color: white;
+        line-height: 50px;
+        display: block;
+    }
+    #box .ab_box{
+        width: 100%;
+        bottom: 100%;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        transition: 0.6s;
+        position: absolute;
+    }
+    #box .ab_box li a{
+        background-color: #777;
+        line-height: 50px;
+        display: block;
+    }
+    #box input:checked ~ .ab_box{
+        height: 250px;
+    }
+    #box .ab_box li:hover a{
+        background-color: black;
+        color: white;
+    } 
+
+</style>
+<body>
+    <div id="box">
+        <input type="checkbox" id="family" name="box_01">
+        <label for="family">패밀리사이트</label>
+        <ul class="ab_box">
+            <li><a href="#">패밀리사이트</a></li>
+            <li><a href="#">패밀리사이트</a></li>
+            <li><a href="#">패밀리사이트</a></li>
+            <li><a href="#">패밀리사이트</a></li>
+            <li><a href="#">패밀리사이트</a></li>
+        </ul>
+    </div>
+</body>
+</html>
